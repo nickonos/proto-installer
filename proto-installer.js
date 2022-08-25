@@ -38,8 +38,9 @@ exec(`git clone ${data.src} ${process.cwd()}\\${data.output}`, (error, stdout, s
 
 function build(){
     if (data.build != null){
-        data.build.proto.map((file, _) => {
-            exec(`protoc --${data.build.protoc_out}=${data.output} ${data.output}/${file}`, (error, stdout, stderr) => {
+        data.build.proto.map((proto, _) => {
+            
+            exec(`protoc --${data.build.protoc_out}=${proto.out_dir} ${data.output}/${proto.name}`, (error, stdout, stderr) => {
                 if (error) {
                     console.log(`error: ${error.message}`);
                     return;
