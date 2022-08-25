@@ -1,6 +1,6 @@
 {
   "name": "proto-installer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A global simple installer for your .proto files.",
   "main": "proto-installer.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
+  "bin": "./proto-installer.js",
   "bugs": {
     "url": "https://github.com/nickonos/proto-installer/issues"
   },
