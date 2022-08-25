@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+proto-installer-win.exe
+proto-installer-macos
+proto-installer-linux
+package-lock.json
